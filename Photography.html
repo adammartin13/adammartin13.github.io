@@ -41,7 +41,6 @@
         <!-- Page content-->
         <div class="container" id="start">
             <div class="row justify-content-center">
-                <!-- Modal gallery -->
                 <section class="my-4">
                     <!-- Gallery -->
                     <div class="row">
@@ -50,7 +49,28 @@
                             src="./assets/banner.png"
                             class="w-100 shadow-1-strong rounded mb-4"
                             alt="Boat on Calm Water"
+                            id="banner"
                         />
+                        <div id="myModal" class="modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img 
+                                            src="./assets/banner.png"
+                                            width="100%"
+                                            height="100%"
+                                        />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3 style="font-weight:bold;">Sample Title</h3>
+                                        <h4 style="font-style:italic">Sample date</h4>
+                                        <p>A brief but detailed description of the photograph.</p>
+                                        <hr class="modal-line">
+                                        <button type="button" class="btn btn-secondary modal-button close" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     
                         <img
                             src="./assets/bliss.png"
