@@ -5401,6 +5401,9 @@ textarea.form-control-lg {
   width: auto;
   margin: var(--bs-modal-margin);
   pointer-events: none;
+  animation-name: modal-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
 }
 
 .modal.fade .modal-dialog {
@@ -5525,22 +5528,14 @@ textarea.form-control-lg {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
-}
-
-#myModal{
   animation-name: modal-animation;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
 }
 
 @keyframes modal-animation{
   0% {opacity: 0%;}
   100% {opacity: 100%;}
-}
-
-@keyframes modal-animation-out{
-  0% {opacity: 100%;}
-  100% {opacity: 0%;}
 }
 
 .modal-line {

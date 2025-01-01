@@ -53,10 +53,10 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("modal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("banner");
+var btn = document.getElementById("preview");
 
 // Get the modal close button
 var close = document.getElementsByClassName("close")[0];
@@ -81,11 +81,11 @@ close.onclick = function() {
             }, time);
             console.log(time);
         }
+        else{
+            modal.style.display = "none";
+            modal.style.opacity = "100%";
+        }
     }
 
     scheduleTimeout(); // Start the iteration
-
-    setTimeout(() => {
-        modal.style.display = none;
-    }, 3001);
 }
