@@ -5402,6 +5402,7 @@ textarea.form-control-lg {
   margin: var(--bs-modal-margin);
   pointer-events: none;
 }
+
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
@@ -5513,6 +5514,33 @@ textarea.form-control-lg {
   margin-right: auto;
   display: flex;
   align-items: center;
+}
+
+.modal-blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+}
+
+#myModal{
+  animation-name: modal-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes modal-animation{
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+@keyframes modal-animation-out{
+  0% {opacity: 100%;}
+  100% {opacity: 0%;}
 }
 
 .modal-line {

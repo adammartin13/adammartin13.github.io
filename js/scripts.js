@@ -58,15 +58,34 @@ var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btn = document.getElementById("banner");
 
-// Get the <span> element that closes the modal
+// Get the modal close button
 var close = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// When the user clicks on the image, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+    modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks close, close the modal
 close.onclick = function() {
-  modal.style.display = "none";
+    let percentage = 100;
+    let time = 3;
+
+    function scheduleTimeout() {
+        if (time > 0) {
+            setTimeout(() => {
+                modal.style.opacity = `${percentage}%`;
+                percentage -= 1;
+                time -= 0.03;  // -1 * (time / percentage)
+                scheduleTimeout(); // Schedule the next timeout
+            }, time);
+            console.log(time);
+        }
+    }
+
+    scheduleTimeout(); // Start the iteration
+
+    setTimeout(() => {
+        modal.style.display = none;
+    }, 3001);
 }
