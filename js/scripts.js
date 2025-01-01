@@ -53,21 +53,75 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // Get the modal
-var modal = document.getElementById("modal");
+var modal1 = document.getElementById("modal1");
 
 // Get the button that opens the modal
-var btn = document.getElementById("preview");
+var btn1 = document.getElementById("preview1");
+btn1.onclick = ()=>{
+    openModal(modal1);
+}
 
 // Get the modal close button
-var close = document.getElementsByClassName("close")[0];
+var close1 = document.getElementById("close1");
+close1.onclick = ()=>{
+    closeModal(modal1);
+}
 
-// When the user clicks on the image, open the modal
-btn.onclick = function() {
+var modal2 = document.getElementById("modal2");
+var btn2 = document.getElementById("preview2");
+btn2.onclick = ()=>{
+    openModal(modal2);
+}
+var close2 = document.getElementById("close2");
+close2.onclick = ()=>{
+    closeModal(modal2);
+}
+
+var modal3 = document.getElementById("modal3");
+var btn3 = document.getElementById("preview3");
+btn3.onclick = ()=>{
+    openModal(modal3);
+}
+var close3 = document.getElementById("close3");
+close3.onclick = ()=>{
+    closeModal(modal3);
+}
+
+var modal4 = document.getElementById("modal4");
+var btn4 = document.getElementById("preview4");
+btn4.onclick = ()=>{
+    openModal(modal4);
+}
+var close4 = document.getElementById("close4");
+close4.onclick = ()=>{
+    closeModal(modal4);
+}
+
+var modal5 = document.getElementById("modal5");
+var btn5 = document.getElementById("preview5");
+btn5.onclick = ()=>{
+    openModal(modal5);
+}
+var close5 = document.getElementById("close5");
+close5.onclick = ()=>{
+    closeModal(modal5);
+}
+
+var modal6 = document.getElementById("modal6");
+var btn6 = document.getElementById("preview6");
+btn6.onclick = ()=>{
+    openModal(modal6);
+}
+var close6 = document.getElementById("close6");
+close6.onclick = ()=>{
+    closeModal(modal6);
+}
+
+function openModal(modal){
     modal.style.display = "block";
 }
 
-// When the user clicks close, close the modal
-close.onclick = function() {
+function closeModal(modal){
     let percentage = 100;
     let time = 3;
 
