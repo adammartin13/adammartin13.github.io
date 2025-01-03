@@ -117,6 +117,126 @@ close6.onclick = ()=>{
     closeModal(modal6);
 }
 
+var modal7 = document.getElementById("modal7");
+var btn7 = document.getElementById("preview7");
+btn7.onclick = ()=>{
+    openModal(modal7);
+}
+var close7 = document.getElementById("close7");
+close7.onclick = ()=>{
+    closeModal(modal7);
+}
+
+var modal8 = document.getElementById("modal8");
+var btn8 = document.getElementById("preview8");
+btn8.onclick = ()=>{
+    openModal(modal8);
+}
+var close8 = document.getElementById("close8");
+close8.onclick = ()=>{
+    closeModal(modal8);
+}
+
+var modal9 = document.getElementById("modal9");
+var btn9 = document.getElementById("preview9");
+btn9.onclick = ()=>{
+    openModal(modal9);
+}
+var close9 = document.getElementById("close9");
+close9.onclick = ()=>{
+    closeModal(modal9);
+}
+
+var modal10 = document.getElementById("modal10");
+var btn10 = document.getElementById("preview10");
+btn10.onclick = ()=>{
+    openModal(modal10);
+}
+var close10 = document.getElementById("close10");
+close10.onclick = ()=>{
+    closeModal(modal10);
+}
+
+var modal11 = document.getElementById("modal11");
+var btn11 = document.getElementById("preview11");
+btn11.onclick = ()=>{
+    openModal(modal11);
+}
+var close11 = document.getElementById("close11");
+close11.onclick = ()=>{
+    closeModal(modal11);
+}
+
+var modal12 = document.getElementById("modal12");
+var btn12 = document.getElementById("preview12");
+btn12.onclick = ()=>{
+    openModal(modal12);
+}
+var close12 = document.getElementById("close12");
+close12.onclick = ()=>{
+    closeModal(modal12);
+}
+
+var modal13 = document.getElementById("modal13");
+var btn13 = document.getElementById("preview13");
+btn13.onclick = ()=>{
+    openModal(modal13);
+}
+var close13 = document.getElementById("close13");
+close13.onclick = ()=>{
+    closeModal(modal13);
+}
+
+var modal14 = document.getElementById("modal14");
+var btn14 = document.getElementById("preview14");
+btn14.onclick = ()=>{
+    openModal(modal14);
+}
+var close14 = document.getElementById("close14");
+close14.onclick = ()=>{
+    closeModal(modal14);
+}
+
+var modal15 = document.getElementById("modal15");
+var btn15 = document.getElementById("preview15");
+btn15.onclick = ()=>{
+    openModal(modal15);
+}
+var close15 = document.getElementById("close15");
+close15.onclick = ()=>{
+    closeModal(modal15);
+}
+
+var modal16 = document.getElementById("modal16");
+var btn16 = document.getElementById("preview16");
+btn16.onclick = ()=>{
+    openModal(modal16);
+}
+var close16 = document.getElementById("close16");
+close16.onclick = ()=>{
+    closeModal(modal16);
+}
+
+var modal17 = document.getElementById("modal17");
+var btn17 = document.getElementById("preview17");
+btn17.onclick = ()=>{
+    openModal(modal17);
+}
+var close17 = document.getElementById("close17");
+close17.onclick = ()=>{
+    closeModal(modal17);
+}
+
+var modal18 = document.getElementById("modal18");
+var btn18 = document.getElementById("preview18");
+btn18.onclick = ()=>{
+    openModal(modal18);
+}
+var close18 = document.getElementById("close18");
+close18.onclick = ()=>{
+    closeModal(modal18);
+}
+
 function openModal(modal){
     modal.style.display = "block";
 }
