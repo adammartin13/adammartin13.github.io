@@ -107,16 +107,6 @@ close5.onclick = ()=>{
     closeModal(modal5);
 }
 
-var modal6 = document.getElementById("modal6");
-var btn6 = document.getElementById("preview6");
-btn6.onclick = ()=>{
-    openModal(modal6);
-}
-var close6 = document.getElementById("close6");
-close6.onclick = ()=>{
-    closeModal(modal6);
-}
-
 var modal7 = document.getElementById("modal7");
 var btn7 = document.getElementById("preview7");
 btn7.onclick = ()=>{
