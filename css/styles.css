@@ -639,6 +639,7 @@ progress {
   font-style: italic;
   color: #6c757d;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .container,

@@ -97,6 +97,49 @@
                             <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2342913/#!po=15.7407">facial expression associations and their relative muscle activations.</a>
                         </p>
                         <img class="img-fluid" src="/blog/emotion_recognition/face_muscle.png">
+                        <p class="figure-caption text-muted">
+                            Central Control of Muscles of Facial Expression Fig. 1. J A Stephens, A A Root
+                        </p>
+                        <p>
+                            If we were to apply mainstream technology towards our emotion recognition solution, then facial recognition seemed like the 
+                            simplest approach given smart phone accessibility. With a prioritization on facial recognition for analyzing emotion, the next 
+                            step would be to write a program for getting us facial data.
+                        </p>
+                        <p>
+                            To this end I ended up using Adam Geitgey’s 
+                            <a href="https://pypi.org/project/face-recognition/">face-recognition</a> 
+                            library. This library utilized dlib’s recognition to assist us with 
+                            identifying facial landmarks. Once I can identify the key points I’m looking for in conjunction with the research papers I’ve found, I 
+                            can move towards mapping out facial muscles in association with these landmark locations.
+                        </p>
+                        <img class="img-fluid" src="/blog/emotion_recognition/face_points.png">
+                        <p class="figure-caption text-muted">
+                            DLIB Facial Landmarks
+                        </p>
+                        <p>
+                            I took a shot at this on a hot weekend back home. There’s a python function that I wrote using this 
+                            library; I enable the webcam on my laptop, set some color preferences, and the function runs faster than 
+                            expected. My project directory now contains two new files.
+                        </p>
+                        <img class="img-fluid" src="/blog/emotion_recognition/output.png">
+                        <p>
+                            It's not common unless you’re a front end developer to receive immediate visual feedback on your code. The 
+                            code wasn’t doing anything new, I just modified the output, but it felt so invigorating to see my face 
+                            get captured and these datapoints populate. I just performed facial recognition with code that I wrote 
+                            and I see that it's possible to isolate these data points. I felt that this project just might actually 
+                            have legs.
+                        </p>
+                        <p>
+                            INSERT CODE BLOCK 1
+                        </p>
+                        <p>
+                            I got back to the books. My program will need to identify the 
+                            <a href="https://www.paulekman.com/universal-emotions/">seven universal expressions</a>
+                            (anger, contempt, disgust, fear, happiness, sadness, and surprise) as well as an eighth “neutral” 
+                            expression. The easiest of these being happiness which we can associate with the activation of the 
+                            zygomaticus major (ZMM). 
+                        </p>
+
                         <h2 class="section-heading">The Final Frontier</h2>
                         <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
                         <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
