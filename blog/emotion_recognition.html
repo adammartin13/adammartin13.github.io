@@ -30,7 +30,7 @@
                     <div>
                         <div>
                             <h1 class="mx-auto my-0 text-uppercase blog-title">Emotion Recognition</h1>
-                            <h3 class="text-white-50 mx-auto mt-2 mb-5 blog-sub">An attempt to mathematically deduce emotions using facial recognition data.</h3>
+                            <h3 class="text-white-50 mx-auto mt-2 mb-5 blog-sub">Mathematically deducing emotions using facial recognition data.</h3>
                             <h2 class="text-white-50 mt-2 mb-5 blog-meta">Summer 2021</h2>
                         </div>
                         <a class="btn btn-primary" href="#start">Read</a>
@@ -63,7 +63,7 @@
                             representing the full spectrum of human emotion, thought, and creativity.
                         </p>
                         <p>
-                            I found Caleb’s attachment to Ava suspect. Why would someone share these feelings with an android? Even if Ava exhibited full 
+                            I found Caleb’s attachment to Ava unjustified. Why would someone share these feelings with an android? Even if Ava exhibited full 
                             autonomy so as to say that she is merely an artificial human, why would he fall for someone that he’s only met a handful of 
                             times and knows so little of? Given that it is later revealed that Nathan, Ava’s creator, designed Ava around Caleb’s porn 
                             history and chose Caleb for his moral compass and perhaps his relationship situation, is it not out of the question that Nathan 
@@ -131,6 +131,11 @@
                             be something that I could accomplish.
                         </p>
                         <img class="img-fluid" src="/blog/emotion_recognition/code1.png" style="margin-bottom: 1rem;">
+                        <p>
+                            Every smile, wince, grimace, and beautifully manifested composure can be itemized and fragmented into 
+                            infinitesimally small and binary components to be sorted and algorithmically judged. Myself and the 
+                            computer now sought the electric feeling of soft eyes and a bright smile meeting our own.
+                        </p>
                         <h2 class="section-heading">It Grows from Within</h2>
                         <p>
                             I got back to the books. My program will need to identify the 
@@ -144,12 +149,13 @@
                             Investigating the Contraction Pattern of the Zygomaticus Major, Fig. 4. Daniel J. Rams.
                         </p>
                         <p>
-                            To track this muscle we simply need to record a face and then extract the proper points associated with the 
-                            muscle. In our case no advanced geometry would be required, since there is already a tracked landmark for 
-                            the edges of the mouth (48 and 54) which we can then draw a line from to their respective upper jaw 
-                            landmark points (0 and 16). This gives us a rough estimate of where the ZMM is. Given a video input where 
-                            we can measure the change in the ZMM relative to time, we can determine if at a given frame the ZMM is 
-                            activated and if so, infer that the user is smiling and thus happy.
+                            The ZMM is a thin muscle running from the edge of the upper lip to the zygomatic bone (also known as the 
+                            cheek bone). It’s amongst a group of muscles known as the laughter muscles for its contribution to 
+                            smiling and laughter. For our case we will draw a line that runs parallel through the ZMM rather than 
+                            tracking the shifting 3D muscle in its entirety. To do so I took a shortcut connecting the upper lip 
+                            points (48 and 45), past the connecting point at the zygomatic bone, and to the upper jaw points (0 and 
+                            16). Given a video input where we can measure the change in the ZMM relative to time, we can determine if 
+                            at a given frame the ZMM is activated and if so, infer that the user is smiling and thus happy.
                         </p>
                         <img class="img-fluid" src="/blog/emotion_recognition/code2.png" style="margin-bottom: 1rem;">
                         <p>
@@ -157,7 +163,7 @@
                             ZMM with violet over a medical diagram consisting of a portrait and a depiction of the ZMM muscle over 
                             the person's face. The program is able to draw the line through the ZMM. Contraction of the muscle would 
                             result in the length of the line decreasing, thus allowing us to determine if the user is smiling. This 
-                            supports our earlier hypothesis where it may in fact be possible for LLM’s to understand human emotion 
+                            supports our earlier assumptions where it may in fact be possible for AGI to understand human emotion 
                             via the mathematical deduction of facial structures in response to particular biochemical signatures. If 
                             the user is happy they will smile and we can calculate that they are smiling. An AI may not be able to 
                             feel happiness in the same way that we do, but it’s possible for it to understand that we are happy.
@@ -172,15 +178,14 @@
                             the new problem of determining the metric size of facial components given an image.
                         </p>
                         <p>
-                            At the time of developing this project, smartphone software for mapping a face in 3D space from a series of
-                            images did not exist. Thus to obtain the size of an object on a 2D plane would require some point of 
-                            reference, say a quarter. Having such a point of reference would allow me to create a pixel to metric 
-                            ratio. The question I raised then was would it be possible to forgo the static reference object for a 
+                            To obtain the size of an object on a 2D plane would require some static point of 
+                            reference, say a quarter. Having such a guide would allow me to create a pixel to metric 
+                            ratio. The question I then raised was would it be possible to forgo the static reference for a 
                             standard image of the face without the use of additional technologies or metadata?
                         </p>
                         <h2 class="section-heading">Window to the Soul</h2>
                         <p>
-                            My assumption: the human eye is one of the least growing organs on the human body. Its size is also roughly
+                            The human eye is the least growing organ on the human body. Its size is also roughly
                             the same regardless of other genetic factors across all humans. Can we measure the pixel size of the 
                             user's eye, then cross-reference other anatomy papers to determine a pixel to metric ratio that can be 
                             used to determine the size of other facial features?
@@ -245,7 +250,7 @@
                             In the winter I conducted a study where I gathered data on 100 universities and their respective computer 
                             science programs, writing an algorithm to tell me who I should transfer to following my sophomore year at 
                             Francis Marion University. In the summer of 2022 I packed my bags and moved across the country to Iowa 
-                            State University. Over the year I applied to over 50 research programs and landed an opportunity at Old 
+                            State University. Over the year I applied to nearly a hundred research programs and landed an opportunity at Old 
                             Dominion University to build a large language model that could be used to deter Russian disinformation.
                         </p>
                         <p>
