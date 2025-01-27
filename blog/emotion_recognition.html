@@ -164,18 +164,19 @@
                             the person's face. The program is able to draw the line through the ZMM. Contraction of the muscle would 
                             result in the length of the line decreasing, thus allowing us to determine if the user is smiling. This 
                             supports our earlier assumptions where it may in fact be possible for AGI to understand human emotion 
-                            via the mathematical deduction of facial structures in response to particular biochemical signatures. If 
+                            via the mathematical deduction of facial structures. If 
                             the user is happy they will smile and we can calculate that they are smiling. An AI may not be able to 
                             feel happiness in the same way that we do, but it’s possible for it to understand that we are happy.
                         </p>
                         <img class="img-fluid" src="/blog/emotion_recognition/ZMM_Diagram.png" style="margin-bottom: 1rem;">
                         <p>
-                            After drawing the line in our output we determine the size of the ZMM using the distance formula between 
-                            the two points, allowing us to track each ZMM activation separately. This however introduces a new 
-                            problem: we’re only determining the size of a muscle in pixel space. Effectively any paper that we’ll 
-                            read on the subject of muscle contraction will provide us a metric response in regards to the size of the 
-                            contracted muscle. This leads us into an age-old problem of real space in computer vision. So now we have 
-                            the new problem of determining the metric size of facial components given an image.
+                            After drawing the line in our output we determine the size of the ZMM using the distance formula between the 
+                            two points, allowing us to track each ZMM activation separately. This however introduces a new problem: 
+                            we’re only determining the size of a muscle in pixel space. If the user moves closer to or farther away from
+                            the camera, the pixel length of the ZMM will change, giving us a false flag of ZMM contraction. Additionally 
+                            the pixel length will differ between image resolutions when utilizing different cameras or source image 
+                            sizes. This leads us into an age-old problem of real space in computer vision. So now we have the new 
+                            problem of determining the metric size of facial components given an image.
                         </p>
                         <p>
                             To obtain the size of an object on a 2D plane would require some static point of 
@@ -194,7 +195,7 @@
                             The “size of the eye”, or rather the size of the exposed eye can be determined via the palpebral fissure 
                             length (PFL). This can be measured via the distance from the edges of the lacrimal caruncle to the 
                             lateral commissure. Since facial recognition models often base their assumptions around changes in 
-                            shade/color, our model does a good job at isolating these points at 36/39 for the left eye and 42/45 for 
+                            shade and color, our model does a good job at isolating these points at 36/39 for the left eye and 42/45 for 
                             the right.
                         </p>
                         <img class="img-fluid" src="/blog/emotion_recognition/PFL.png">
@@ -205,7 +206,12 @@
                             A quick Google search however on how long exactly the PFL is yields signs of ethnic bias. For instance, the 
                             Wikipedia entry dictates that the PFL is “approximately 30mm horizontally” which appears to coincide with 
                             <a href="https://depts.washington.edu/fasdpn/pdfs/FAR011002_e231-e241_Astley%5B1%5D.pdf">this study</a> 
-                            from the University of Washington of ~500 participants who were all Caucasian. I then proceeded to read 
+                            from the University of Washington of ~500 participants who were all Caucasian. Gathering this data 
+                            requires the use of digital calipers for an accurate reading. This can prove  
+                            troublesome when performing a study across hundreds of patients, as the calipers have a pointed
+                            metal tip that must be placed on the edges of the eye for an accurate reading, which can cause 
+                            potential damage. Alternatively you could utilize cadavers, however the embalming process or 
+                            previous experimentation of the body can damage the area of the eye needed for study. I read 
                             several papers that conducted this study across their respective ethnic and gender groups. My results 
                             were the following:
                         </p>
