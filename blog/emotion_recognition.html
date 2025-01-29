@@ -29,9 +29,9 @@
                 <div class="d-flex my-auto">
                     <div>
                         <div>
-                            <h1 class="mx-auto my-0 text-uppercase blog-title">Emotion Recognition</h1>
-                            <h3 class="text-white-50 mx-auto mt-2 mb-5 blog-sub">Mathematically deducing emotions using facial recognition data.</h3>
-                            <h2 class="text-white-50 mt-2 mb-5 blog-meta">Summer 2021</h2>
+                            <h1 class="mx-auto my-0 text-uppercase.. blog-title">Emotion Recognition</h1>
+                            <h3 class="text-white-50 mx-auto mt-2 mb-5.. blog-sub">Mathematically deducing emotions using facial recognition data.</h3>
+                            <h2 class="text-white-50 mt-2 mb-5.. blog-meta">Summer 2021</h2>
                         </div>
                         <a class="btn btn-primary" href="#start">Read</a>
                     </div>
@@ -97,7 +97,7 @@
                             In particular I was interested in 
                             <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2342913/#!po=15.7407">facial expression associations and their relative muscle activations.</a>
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/face_muscle.png">
+                        <img class="img-fluid" src="../blog/emotion_recognition/face_muscle.png">
                         <p class="figure-caption text-muted">
                             Central Control of Muscles of Facial Expression, Fig. 1. J A Stephens, A A Root
                         </p>
@@ -113,7 +113,7 @@
                             identifying facial landmarks. Once I can identify the key points I’m looking for in conjunction with the research papers I’ve found, I 
                             can move towards mapping out facial muscles in association with these landmark locations.
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/face_points.png">
+                        <img class="img-fluid" src="../blog/emotion_recognition/face_points.png">
                         <p class="figure-caption text-muted">
                             DLIB Facial Landmarks
                         </p>
@@ -122,7 +122,7 @@
                             library; I enabled the webcam on my laptop, set some color preferences, and the function ran faster than 
                             expected. My project directory contained two new image files.
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/output.png" style="margin-bottom: 1rem;">
+                        <img class="img-fluid" src="../blog/emotion_recognition/output.png" style="margin-bottom: 1rem;">
                         <p>
                             It's not common unless you’re a front end developer to receive immediate visual feedback on your code. The 
                             code wasn’t doing anything new, I just modified the output, but it felt so invigorating to see my face 
@@ -130,7 +130,7 @@
                             and I saw that it was possible to isolate these facial data points. I felt that this project might 
                             be something that I could accomplish.
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/code1.png" style="margin-bottom: 1rem;">
+                        <img class="img-fluid" src="../blog/emotion_recognition/code1.png" style="margin-bottom: 1rem;">
                         <p>
                             Every smile, wince, grimace, and beautifully manifested composure can be itemized and fragmented into 
                             small components to be sorted and algorithmically judged. Myself and the 
@@ -144,7 +144,7 @@
                             expression. The easiest of these being happiness which we can associate with the activation of the 
                             zygomaticus major (ZMM). 
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/ZMM.png">
+                        <img class="img-fluid" src="../blog/emotion_recognition/ZMM.png">
                         <p class="figure-caption text-muted">
                             Investigating the Contraction Pattern of the Zygomaticus Major, Fig. 4. Daniel J. Rams.
                         </p>
@@ -157,7 +157,7 @@
                             16). Given a video input where we can measure the change in the ZMM relative to time, we can determine if 
                             at a given frame the ZMM is activated and if so, infer that the user is smiling and thus happy.
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/code2.png" style="margin-bottom: 1rem;">
+                        <img class="img-fluid" src="../blog/emotion_recognition/code2.png" style="margin-bottom: 1rem;">
                         <p>
                             The image below is the result of applying our code wherein we sketch the facial landmarks with cyan and the 
                             ZMM with violet over a medical diagram consisting of a portrait and a depiction of the ZMM muscle over 
@@ -168,7 +168,7 @@
                             the user is happy they will smile and we can calculate that they are smiling. An AI may not be able to 
                             feel happiness in the same way that we do, but it’s possible for it to understand that we are happy.
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/ZMM_Diagram.png" style="margin-bottom: 1rem;">
+                        <img class="img-fluid" src="../blog/emotion_recognition/ZMM_Diagram.png" style="margin-bottom: 1rem;">
                         <p>
                             After drawing the line in our output we determine the size of the ZMM using the distance formula between the 
                             two points, allowing us to track each ZMM activation separately. This however introduces a new problem: 
@@ -198,7 +198,7 @@
                             shade and color, our model does a good job at isolating these points at 36/39 for the left eye and 42/45 for 
                             the right.
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/PFL.png">
+                        <img class="img-fluid" src="../blog/emotion_recognition/PFL.png">
                         <p class="figure-caption text-muted">
                             Appl. of Deep Learning for Investigation of Neurological Diseases, Anatomy of the Eye. Mohammed Hamoud.
                         </p>
@@ -247,7 +247,7 @@
                             Utilizing this information would allow us to more accurately portray the sizing of particular muscles when 
                             using PFL as a point of reference. We can then find the PFL in a similar manner to the ZMM:
                         </p>
-                        <img class="img-fluid" src="/blog/emotion_recognition/code3.png" style="margin-bottom: 1rem;">
+                        <img class="img-fluid" src="../blog/emotion_recognition/code3.png" style="margin-bottom: 1rem;">
                         <p>
                             I could then begin tracking ZMM contraction and by fall of 2021 compute our first emotion: happiness.
                             We can now determine an estimated metric length simply by 
