@@ -589,14 +589,6 @@ progress {
   font-style: italic;
 }
 
-.blockquote::before{
-  content: '"';
-}
-
-.blockquote::after{
-  content: '"';
-}
-
 .blockquote > :last-child {
   margin-bottom: 0;
 }
