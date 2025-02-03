@@ -11063,6 +11063,7 @@ body {
   color: #000;
   font-weight: 700;
   padding: 0.9rem 0;
+  padding-left: 0.1rem;
 }
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#f2f2f2, 80%);
@@ -11073,6 +11074,7 @@ body {
   outline: none;
   background-color: transparent;
 }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -11084,6 +11086,7 @@ body {
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
     color: #f2f2f2;
+    padding-left: 1.5rem;
   }
   #mainNav .nav-link {
     transition: none;
