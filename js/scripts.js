@@ -67,16 +67,6 @@ close1.onclick = ()=>{
     closeModal(modal1);
 }
 
-var mobileMenu = document.getElementById("menu-modal");
-var menu = document.getElementById("menu");
-menu.onclick = ()=>{
-    openModal(mobileMenu);
-}
-var closeMenu = document.getElementById("closeMenu");
-closeMenu.onclick = ()=>{
-    closeModal(mobileMenu);
-}
-
 var modal2 = document.getElementById("modal2");
 var btn2 = document.getElementById("preview2");
 btn2.onclick = ()=>{
