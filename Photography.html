@@ -19,21 +19,23 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="./index.html">Home</a>
-                <a class="navbar-brand" style="padding-left:1.5rem;" href="./Software.html">Software</a>
-                <a class="navbar-brand" style="padding-left:1.5rem;" href="./Writing.html">Writing</a>
-                <a class="navbar-brand" style="padding-left:1.5rem;" href="#page-top">Photography</a>
-                <a class="navbar-brand" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                    Menu
-                </a>
-                <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="./index.html">Home</a>
-                    <a class="dropdown-item" href="./Software.html">Software</a>
-                    <a class="dropdown-item" href="./Writing.html">Writing</a>
-                    <a class="dropdown-item" href="./Photography.html">Photography</a>
+                <a class="navbar-brand desktop-menu" href="./index.html">Home</a>
+                <a class="navbar-brand desktop-menu" href="./Software.html">Software</a>
+                <a class="navbar-brand desktop-menu" href="./Writing.html">Writing</a>
+                <a class="navbar-brand desktop-menu" href="#page-top">Photography</a>
+                <div class="col-lg-4 col-md-12 mb-lg-0 mobile-menu">
+                    <a class="navbar-brand" href="#" id="dropdown-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom:0.2rem;" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <a class="dropdown-item" href="./index.html">Home</a>
+                        <a class="dropdown-item" href="./Software.html">Software</a>
+                        <a class="dropdown-item" href="./Writing.html">Writing</a>
+                        <a class="dropdown-item" href="./Photography.html">Photography</a>
+                    </div>
                 </div>
             </div>
         </nav>

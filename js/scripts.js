@@ -52,6 +52,15 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+var mobileMenu = document.getElementById("dropdown-link");
+var dropdownMenu = document.getElementById("dropdown-menu");
+mobileMenu.onclick = ()=>{
+    dropdownMenu.style.display = "block";
+}
+mobileMenu.onscroll = ()=>{
+    dropdownMenu.style.display = "none";
+}
+
 // Get the modal
 var modal1 = document.getElementById("modal1");
 
