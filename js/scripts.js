@@ -62,8 +62,10 @@ window.addEventListener('scroll', () => {
     dropdownMenu.style.display = "none";
 });
 // Close dropdown on outside click
-document.addEventListener('click', (event) => {
-    dropdownMeny.style.display = "none";
+window.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target)) {
+        dropdownMenu.style.display = "none";
+    }
 });
 
 // Get the modal
