@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
 // Close dropdown on outside click
 window.addEventListener('click', (event) => {
     if (!mobileMenu.contains(event.target)) {
-        dropdownMenu.style.display = "none";
+        closeModal(dropdownMenu);
     }
 });
 
